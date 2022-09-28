@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOILER PLATE</title>
     <!-- ESSENTIAL start -->
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/moralis-v1/dist/moralis.js"></script>
     <!-- ESSENTIAL end -->
     
     <!-- WALLET CONNECT -->
@@ -50,16 +47,16 @@
     </footer>
 
     <script>
-        // (async function(){
-        //     const serverUrl = "SERVER_URL"
-        //     const appId = "APP_ID"
-        //     await Moralis.start({serverUrl, appId})
-        // })()
+         (async function(){
+             const serverUrl = "https://c3xnzzdcfkjr.usemoralis.com:2053/server"
+             const appId = "Ur8ZP4uPSkuCQrUU0K7aZ76GIFvNsIwSvgupADh9"
+             await Moralis.start({serverUrl, appId})
+         })()
 
         // Initialise Moralisq
-        const serverUrl = "SERVER_URL"
-        const appId = "APP_ID"
-        Moralis.start({serverUrl, appId})
+        // const serverUrl = "https://bgpdh2q8csou.usemoralis.com:2053/server";
+        // const appId = "fSw93m6pDL8tendJ64sfxRckMOM67L9tNlM3zywO";
+        // Moralis.start({serverUrl, appId});
         
         async function login() {
             try {

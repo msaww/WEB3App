@@ -1,7 +1,7 @@
 // MORALIS CODE
 (async function(){
-  const serverUrl = "https://gdj8rkg4b4cz.usemoralis.com:2053/server"
-  const appId = "LOYAMIVCC2ZrKdeKJee3hWzuRuMzIim1lbe9VLd8"
+  const serverUrl = "https://c3xnzzdcfkjr.usemoralis.com:2053/server"
+  const appId = "Ur8ZP4uPSkuCQrUU0K7aZ76GIFvNsIwSvgupADh9"
   await Moralis.start({serverUrl, appId})
 })()
 
@@ -11,6 +11,7 @@ async function login() {
 
 async function logout() {
   await Moralis.User.logOut();
+  alert("Logged out!");
 }
 
 async function transferNative(){
